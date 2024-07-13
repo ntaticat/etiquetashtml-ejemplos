@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            /* Verde */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            background: #333;
+            /* Negro */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question input {
+            margin-right: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e0f7fa;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .back-link:hover {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Encuesta Interactiva</h1>
+    </header>
+    <main>
+        <section>
+            <h2>¿Cuál es tu color favorito?</h2>
+            <div class="question">
+                <label><input type="radio" name="color" value="Rojo"> Rojo</label>
+                <label><input type="radio" name="color" value="Azul"> Azul</label>
+                <label><input type="radio" name="color" value="Verde"> Verde</label>
+                <label><input type="radio" name="color" value="Amarillo"> Amarillo</label>
+            </div>
+            <button onclick="submitAnswer()">Enviar Respuesta</button>
+            <div id="result" class="result" style="display:none;"></div>
+        </section>
+        <a class="back-link" href="index.html">Regresar al Índice</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Encuesta Interactiva</p>
+    </footer>
+    <script>
+        function submitAnswer() {
+            const options = document.getElementsByName('color');
+            let selectedColor = '';
+            for (const option of options) {
+                if (option.checked) {
+                    selectedColor = option.value;
+                    break;
+                }
+            }
+            const resultDiv = document.getElementById('result');
+            if (selectedColor) {
+                resultDiv.innerHTML = `Tu color favorito es: ${selectedColor}`;
+                resultDiv.style.display = 'block';
+            } else {
+                resultDiv.innerHTML = 'Por favor, selecciona una opción.';
+                resultDiv.style.display = 'block';
+            }
+        }
+    </script>
+    <script src="10-script.js"></script>
+</body>
+
+</html>

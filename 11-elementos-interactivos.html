@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            /* Azul */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            background: #333;
+            /* Negro */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        details {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        details summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: white;
+        }
+
+        .dialog-footer {
+            text-align: right;
+        }
+
+        .dialog-footer button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .back-link:hover {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Preguntas Frecuentes</h1>
+    </header>
+    <main>
+        <section>
+            <details>
+                <summary>¿Qué es HTML?</summary>
+                <p>HTML significa HyperText Markup Language y se utiliza para crear la estructura de una página web.</p>
+            </details>
+            <details>
+                <summary>¿Qué es CSS?</summary>
+                <p>CSS significa Cascading Style Sheets y se utiliza para diseñar y maquetar una página web.</p>
+            </details>
+            <details>
+                <summary>¿Qué es JavaScript?</summary>
+                <p>JavaScript es un lenguaje de programación que permite añadir interactividad a las páginas web.</p>
+            </details>
+            <button onclick="openDialog()">Más Información</button>
+            <dialog id="infoDialog">
+                <h2>Información Adicional</h2>
+                <p>Si necesitas más información, por favor visita nuestro sitio web o contáctanos.</p>
+                <div class="dialog-footer">
+                    <button onclick="closeDialog()">Cerrar</button>
+                </div>
+            </dialog>
+        </section>
+        <a class="back-link" href="index.html">Regresar al Índice</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Preguntas Frecuentes</p>
+    </footer>
+    <script>
+        function openDialog() {
+            document.getElementById('infoDialog').showModal();
+        }
+
+        function closeDialog() {
+            document.getElementById('infoDialog').close();
+        }
+    </script>
+</body>
+
+</html>

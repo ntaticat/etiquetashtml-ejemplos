@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Diarias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            /* Negro */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #007BFF;
+            /* Azul */
+        }
+
+        nav {
+            background: #444;
+            /* Gris oscuro */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            /* Negro */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section>header {
+            background: #007BFF;
+            /* Azul */
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 0 0 10px 10px;
+            background-color: #f9f9f9;
+        }
+
+        article header {
+            color: #2b2b2b;
+            background: #f1f1f1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        aside {
+            background: #fffae6;
+            /* Amarillo claro */
+            border-left: 4px solid #ffa500;
+            /* Naranja */
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #333;
+            /* Negro */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 4px solid #007BFF;
+            /* Azul */
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .back-link:hover {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Noticias Diarias</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Mundo</a>
+        <a href="#">Deportes</a>
+        <a href="#">Tecnología</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <section>
+            <header>
+                <h2>Noticias de Hoy</h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Noticia Principal</h3>
+                    <p>Publicado el: <time datetime="2024-07-14">14 de julio, 2024</time></p>
+                </header>
+                <p>En el día de hoy se han reportado varias noticias importantes alrededor del mundo. Mantente informado
+                    con nuestras actualizaciones diarias.</p>
+            </article>
+            <article>
+                <header>
+                    <h3>Deportes</h3>
+                    <p>Publicado el: <time datetime="2024-07-14">14 de julio, 2024</time></p>
+                </header>
+                <p>El equipo local ha ganado el campeonato regional, consolidándose como uno de los mejores equipos del
+                    país.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Publicidad</h2>
+            <p>Consigue los mejores productos en nuestra tienda en línea. ¡Ofertas exclusivas por tiempo limitado!</p>
+        </aside>
+        <a class="back-link" href="index.html">Regresar al Índice</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Noticias Diarias</p>
+    </footer>
+</body>
+
+</html>

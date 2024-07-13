@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <!-- Enlace a una hoja de estilo externa -->
+    <link rel="stylesheet" href="09-estilo-y-enlace.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #6A0572;
+            /* Púrpura oscuro */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background: #4A235A;
+            /* Púrpura */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #6A0572;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #6A0572;
+            /* Púrpura oscuro */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .back-link:hover {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Mí</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Primer Post</h2>
+            <p>Bienvenidos a mi blog personal. Este es mi primer post donde compartiré algunas de mis experiencias y
+                pensamientos.</p>
+            <p>Para más información sobre mí, visita la sección <a href="#">Sobre Mí</a>.</p>
+        </article>
+        <a class="back-link" href="index.html">Regresar al Índice</a>
+    </main>
+    <footer class="sticky-footer">
+        <p>&copy; 2024 Mi Blog Personal</p>
+    </footer>
+</body>
+
+</html>
